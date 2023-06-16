@@ -191,11 +191,11 @@
            <dl class="row">
            <dt class="col-sm-3">Why</dt>
             <dd class="col-sm-9"> 
-              Originally, I didn't plan to study at NCU, I was actually trying to apply for the International College of Innovation at NCCU. I even had all the paper ready. However, someone told me that I could apply for the 繁星計畫, which I did and successfully got accepted to the Department of English at NCU. But as four semesters have gone by, I started to realize that the things that I want to learn aren't here. There's no denying that I learned a lot of critical thinking from the courses I've chosen, but these courses just don't click with me. I wanted something more realistic. Something that could actually be put into use. </dd>
+              Why am I a dreamer? Well, being a dreamer is actually quite tiring because it means there are so many things that you wanna do but you can only focus on one thing to do at a time. But I love the feeling of thinking of the possibility of everything that can happen, and how the process of it brings me a sense of freedom. </dd>
 
             <dt class="col-sm-3">What</dt>
             <dd class="col-sm-9">
-              <p>I am especially drawn to the Global Governance(GG) that can be chosen in Junior year. I won’t say I’m a huge fan of watching News, but I do know the impact it holds toward not only the audience but humanity as a whole. It is important to understand what is happening around us and the world to allow us to have a deeper insight of the possible consequences of our every action.</p>
+              <p>What to do when I'm being a dreamer? To be honest, I don't really know. I still have problems focusing soley on one thing without having another thoughts. But it's ok, I guess. It's a lesson that I need to learn. I hope that one day I can become one that can dream while making her dream come true.</p>
             </dd>
         </div>
 
@@ -243,7 +243,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
+          <h2>English Skills</h2>
 
         <div class="row skills-content">
 
@@ -559,42 +559,62 @@
 
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.9398617144784!2d121.1927238759245!3d24.96816064093851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823c1ec904dcb%3A0xcdc129d4455ce456!2sNational%20Central%20University!5e0!3m2!1sen!2stw!4v1684222550021!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
-
+               </div>
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form" onsubmit="return showFunFact()">
+                  <div class="row">
+                      <div class="form-group col-md-6">
+                          <label for="name">Your Name</label>
+                          <input type="text" name="name" class="form-control" id="name" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                          <label for="name">Your Email</label>
+                          <input type="email" class="form-control" name="email" id="email" required>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="name">Subject</label>
+                      <input type="text" class="form-control" name="subject" id="subject" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="name">Message</label>
+                      <textarea class="form-control" name="message" rows="10" required></textarea>
+                  </div>
+                  <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+          <script>
+              var funFacts = [
+                  "Did you know? Cats have over 20 muscles that control their ears!",
+                  "Fun fact: Banging your head against a wall for one hour burns 150 calories.",
+                  "Here's a weird fact: A flock of crows is known as a murder.",
+                  "Bet you didn't know: An octopus has three hearts!",
+                  "Fun fact: Sea otters hold hands when they sleep to keep from drifting apart.",
+              ];
+
+              function showFunFact() {
+                  var randomFunFact = funFacts[Math.floor(Math.random()*funFacts.length)];
+                  alert(randomFunFact); 
+                  return true;
+              }
+          </script>
+
+</body>
+</html>
+
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
